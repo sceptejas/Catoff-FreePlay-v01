@@ -201,7 +201,7 @@ pub struct InitializePool<'info> {
     #[account(mut)]
     pub admin: Signer<'info>,
     
-    pub airdrop_token_mint: Account<'info, token::Mint>,
+    pub airdrop_token_mint: Account<'info, Mint>,
     
     #[account(
         init_if_needed,
